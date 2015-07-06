@@ -38,7 +38,7 @@ setup(
     long_description=readme + '\n\n' + history,
     author="Flavian Hautbois",
     author_email='flavian@trax-air.com',
-    url='https://github.com/traxair/ddexreader',
+    url='https://github.com/Trax-air/ddexreader',
     packages=find_packages(exclude=["*.tests", "*.tests.*", "tests.*", "tests"]),
     include_package_data=True,
     install_requires=requirements,
@@ -46,7 +46,7 @@ setup(
     zip_safe=False,
     keywords='ddexreader',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
