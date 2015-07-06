@@ -2,7 +2,7 @@
 DDEX Reader for Python
 ======================
 
-.. image:: https://img.shields.io/travis/traxair/ddexreader.svg
+.. image:: https://travis-ci.org/Trax-air/ddexreader.svg
         :target: https://travis-ci.org/traxair/ddexreader
 
 .. image:: https://img.shields.io/pypi/v/ddexreader.svg
