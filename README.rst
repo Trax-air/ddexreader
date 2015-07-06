@@ -28,19 +28,21 @@ Features
 Quickstart
 ----------
 
-```
-from ddexreader import open_ddex, ddex_to_dict
+::
 
-xml_path = '/path/to/my/ddex_file.xml'
-ddex = open_ddex(xml_path)
-ddex_dict = ddex_to_dict(ddex)
-```
+  from ddexreader import open_ddex, ddex_to_dict
+
+  xml_path = '/path/to/my/ddex_file.xml'
+  ddex = open_ddex(xml_path)
+  ddex_dict = ddex_to_dict(ddex)
 
 How to add more DDEX definitions
 --------------------------------
 
 After installing pyxb on your (unix) system, enter:
 
-```
-pyxbgen -u [the url to the definition file]
-```
+::
+
+  pyxbgen -u [the url to the definition file]
+
+Don't forget to submit them through a pull request.
