@@ -18,6 +18,7 @@ lists containing only one element, and some value like UpdateIndicator are not c
 
 * Free software: MIT license
 * Documentation: https://ddexreader.readthedocs.org.
+* Repository: https://github.com/Trax-air/ddexreader
 
 Features
 --------
