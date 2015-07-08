@@ -33,7 +33,7 @@ class PyTest(TestCommand):
 
 setup(
     name='ddexreader',
-    version='0.1.0',
+    version='0.1.0.post1',
     description="This small project allows you to decode DDEX files into friendly Python data types.",
     long_description=readme + '\n\n' + history,
     author="Flavian Hautbois",
