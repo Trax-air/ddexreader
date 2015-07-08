@@ -8,6 +8,9 @@ DDEX Reader for Python
 .. image:: https://img.shields.io/pypi/v/ddexreader.svg
         :target: https://pypi.python.org/pypi/ddexreader
 
+.. image:: https://coveralls.io/repos/Trax-air/ddexreader/badge.svg?branch=master&service=github
+        :target: https://coveralls.io/github/Trax-air/ddexreader?branch=master
+
 
 This project allows you to read DDEX files into friendly Python data types. XML files are decoded using the PyXB
 library.

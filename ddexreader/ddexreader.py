@@ -71,8 +71,6 @@ def ddex_to_dict(ddex):
             except pyxb.NotSimpleContentError:
                 # In this case value was not a leaf element
                 value = ddex_to_dict(value)
-        elif isinstance(value, list):
-            value = [ddex_to_dict(el) for el in value]
         elif isinstance(value, pyxb.binding.content._PluralBinding):
             value = [ddex_to_dict(el) for el in value]
         d[attr] = value
