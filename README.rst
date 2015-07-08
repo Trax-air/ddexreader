@@ -56,5 +56,3 @@ After installing pyxb on your (unix) system, enter:
 ::
 
   pyxbgen -u [the url to the definition file]
-
-Don't forget to submit them through a pull request.
