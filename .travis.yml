@@ -17,6 +17,6 @@ install:
 # command to run tests, e.g. python setup.py test
 script:
   - python setup.py test
-  - coverage run --source=home setup.py test
+  - coverage run --source=ddexreader setup.py test
   - pip install coveralls
 after_success: coveralls
