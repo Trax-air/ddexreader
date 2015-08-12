@@ -1,4 +1,5 @@
 import pyxb
+import ern312
 import ern32
 import ern33
 import ern34
@@ -25,7 +26,9 @@ def open_ddex(path):
     with open(path, 'rb') as f:
         xml_data = f.read()
 
-    if 'MessageSchemaVersionId="ern/32"' in xml_data:
+    if 'MessageSchemaVersionId="2010/ern-main/312"' in xml_data:
+        return ern312.CreateFromDocument(xml_data)
+    elif 'MessageSchemaVersionId="ern/32"' in xml_data:
         return ern32.CreateFromDocument(xml_data)
     elif 'MessageSchemaVersionId="2011/ern-main/33"' in xml_data:
         return ern33.CreateFromDocument(xml_data)
