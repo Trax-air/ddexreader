@@ -30,6 +30,7 @@ Features
 Supported DDEX versions
 -----------------------
 
+* 3.1.2
 * 3.2 (untested)
 * 3.3
 * 3.4
