@@ -6,7 +6,8 @@ import pytest
 from ddexreader import open_ddex, ddex_to_dict
 
 
-@pytest.fixture(scope='session', params=['33',
+@pytest.fixture(scope='session', params=['312',
+                                         '33',
                                          '34',
                                          '341',
                                          '35',
@@ -19,7 +20,7 @@ def xml_file(request):
 
 def test_parse_ddex(xml_file):
     # Check that we can successfully parse the DDEX files under ern37
-    if not '37' in xml_file:
+    if '37' not in xml_file:
         ddex = open_ddex(xml_file)
         ddex_to_dict(ddex)
     else:

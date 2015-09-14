@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ern:NewReleaseMessage xmlns:ern="http://ddex.net/xml/2010/ern-main/312" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ddex.net/xml/2010/ern-main/312 http://ddex.net/xml/2010/ern-main/312/ern-main.xsd" MessageSchemaVersionId="2010/ern-main/312">
+  <MessageHeader>
+    <MessageThreadId>1234</MessageThreadId>
+    <MessageId>12345</MessageId>
+    <MessageSender>
+      <PartyId>1234</PartyId>
+      <PartyName>
+        <FullName>Test</FullName>
+      </PartyName>
+    </MessageSender>
+    <MessageRecipient>
+      <PartyId>123456</PartyId>
+      <PartyName>
+        <FullName>Test2</FullName>
+      </PartyName>
+    </MessageRecipient>
+    <MessageCreatedDateTime>2015-08-06T15:32:20Z</MessageCreatedDateTime>
+  </MessageHeader>
+  <UpdateIndicator>UpdateMessage</UpdateIndicator>
+  <ResourceList>
+    <SoundRecording>
+      <SoundRecordingType>MusicalWorkSoundRecording</SoundRecordingType>
+      <SoundRecordingId>
+        <ISRC>ABC123456789</ISRC>
+      </SoundRecordingId>
+      <ResourceReference>A1</ResourceReference>
+      <ReferenceTitle>
+        <TitleText>Title</TitleText>
+        <SubTitle>Subtitle</SubTitle>
+      </ReferenceTitle>
+      <Duration>PT04M13S</Duration>
+      <SoundRecordingDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <Title TitleType="FormalTitle">
+          <TitleText>Title</TitleText>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Title</TitleText>
+        </Title>
+        <DisplayArtist>
+          <PartyName>
+            <FullName>Test</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <DisplayArtist>
+          <PartyName>
+            <FullName>Test2</FullName>
+          </PartyName>
+          <ArtistRole>FeaturedArtist</ArtistRole>
+        </DisplayArtist>
+        <ResourceContributor>
+          <PartyName>
+            <FullName>Test2</FullName>
+          </PartyName>
+          <ResourceContributorRole Namespace="DPID:1234" UserDefinedValue="Featuring">UserDefined</ResourceContributorRole>
+        </ResourceContributor>
+        <LabelName>Test</LabelName>
+        <PLine>
+          <Year>2015</Year>
+          <PLineText>2015 Test</PLineText>
+        </PLine>
+        <Genre>
+          <GenreText>Electronic</GenreText>
+          <SubGenre>Progressive House</SubGenre>
+        </Genre>
+        <ParentalWarningType>Explicit</ParentalWarningType>
+      </SoundRecordingDetailsByTerritory>
+    </SoundRecording>
+    <Image>
+      <ImageType>FrontCoverImage</ImageType>
+      <ImageId>
+        <ProprietaryId Namespace="DPID:1234">1234.jpg</ProprietaryId>
+      </ImageId>
+      <ResourceReference>A8</ResourceReference>
+      <ImageDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+      </ImageDetailsByTerritory>
+    </Image>
+  </ResourceList>
+  <ReleaseList>
+    <Release>
+      <ReleaseId>
+        <ICPN IsEan="false">123456789101</ICPN>
+      </ReleaseId>
+      <ReleaseReference>R0</ReleaseReference>
+      <ReferenceTitle>
+        <TitleText>Title</TitleText>
+      </ReferenceTitle>
+      <ReleaseResourceReferenceList>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A1</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A2</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A3</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A4</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A5</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A6</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A7</ReleaseResourceReference>
+        <ReleaseResourceReference ReleaseResourceType="SecondaryResource">A8</ReleaseResourceReference>
+      </ReleaseResourceReferenceList>
+      <ReleaseType>Album</ReleaseType>
+      <ReleaseDetailsByTerritory>
+        <TerritoryCode>Worldwide</TerritoryCode>
+        <LabelName>Test</LabelName>
+        <Title TitleType="FormalTitle">
+          <TitleText>Title</TitleText>
+        </Title>
+        <Title TitleType="DisplayTitle">
+          <TitleText>Title</TitleText>
+        </Title>
+        <Title TitleType="GroupingTitle">
+          <TitleText>Title</TitleText>
+        </Title>
+        <DisplayArtist>
+          <PartyName>
+            <FullName>Test</FullName>
+          </PartyName>
+          <ArtistRole>MainArtist</ArtistRole>
+        </DisplayArtist>
+        <ParentalWarningType>Explicit</ParentalWarningType>
+        <ResourceGroup>
+          <ResourceGroup>
+            <SequenceNumber>1</SequenceNumber>
+            <ResourceGroupContentItem>
+              <SequenceNumber>1</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A1</ReleaseResourceReference>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>2</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A2</ReleaseResourceReference>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>3</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A3</ReleaseResourceReference>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>4</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A4</ReleaseResourceReference>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>5</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A5</ReleaseResourceReference>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>6</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A6</ReleaseResourceReference>
+            </ResourceGroupContentItem>
+            <ResourceGroupContentItem>
+              <SequenceNumber>7</SequenceNumber>
+              <ResourceType>SoundRecording</ResourceType>
+              <ReleaseResourceReference ReleaseResourceType="PrimaryResource">A7</ReleaseResourceReference>
+            </ResourceGroupContentItem>
+          </ResourceGroup>
+          <ResourceGroupContentItem>
+            <ResourceType>Image</ResourceType>
+            <ReleaseResourceReference ReleaseResourceType="SecondaryResource">A8</ReleaseResourceReference>
+          </ResourceGroupContentItem>
+        </ResourceGroup>
+        <Genre>
+          <GenreText>Electronic</GenreText>
+          <SubGenre>Progressive House</SubGenre>
+        </Genre>
+        <OriginalReleaseDate>2015-08-11</OriginalReleaseDate>
+      </ReleaseDetailsByTerritory>
+      <PLine>
+        <Year>2015</Year>
+        <PLineText>2015 Test</PLineText>
+      </PLine>
+      <CLine>
+        <Year>2015</Year>
+        <CLineText>2015 Test</CLineText>
+      </CLine>
+    </Release>
+  </ReleaseList>
+  <DealList>
+    <ReleaseDeal>
+      <DealReleaseReference>R0</DealReleaseReference>
+      <Deal>
+        <DealReference>1234</DealReference>
+        <DealTerms>
+          <CommercialModelType>AsPerContract</CommercialModelType>
+          <TakeDown>true</TakeDown>
+          <TerritoryCode>Worldwide</TerritoryCode>
+          <DistributionChannel>
+            <PartyName>
+              <FullName>Test3</FullName>
+            </PartyName>
+            <PartyId>1234</PartyId>
+          </DistributionChannel>
+          <ValidityPeriod>
+            <StartDate>2015-08-11</StartDate>
+          </ValidityPeriod>
+        </DealTerms>
+      </Deal>
+      <EffectiveDate>2015-08-06</EffectiveDate>
+    </ReleaseDeal>
+  </DealList>
+</ern:NewReleaseMessage>
