@@ -1,12 +1,12 @@
 import pyxb
-import ern312
-import ern32
-import ern33
-import ern34
-import ern341
-import ern35
-import ern351
-import ern36
+from . import ern312
+from . import ern32
+from . import ern33
+from . import ern34
+from . import ern341
+from . import ern35
+from . import ern351
+from . import ern36
 
 
 def open_ddex(path):

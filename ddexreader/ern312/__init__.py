@@ -1,1 +1,1 @@
-from binding import *
+from .binding import *

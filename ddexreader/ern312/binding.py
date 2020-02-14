@@ -24,9 +24,9 @@ if pyxb.__version__ != _PyXBVersion:
     raise pyxb.PyXBVersionError(_PyXBVersion)
 
 # Import bindings for namespaces imported into schema
-import _ddexC as _ImportedBinding__ddexC
-import _ddex as _ImportedBinding__ddex
-import _iso639a2 as _ImportedBinding__iso639a2
+from . import _ddexC as _ImportedBinding__ddexC
+from . import _ddex as _ImportedBinding__ddex
+from . import _iso639a2 as _ImportedBinding__iso639a2
 import pyxb.binding.datatypes
 
 # NOTE: All namespace declarations are reserved within the binding

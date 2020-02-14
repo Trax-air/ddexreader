@@ -25,9 +25,9 @@ if pyxb.__version__ != _PyXBVersion:
 
 # Import bindings for namespaces imported into schema
 import pyxb.binding.datatypes
-import _ddexC as _ImportedBinding__ddexC
-import _iso639a2 as _ImportedBinding__iso639a2
-import _ddex as _ImportedBinding__ddex
+from . import _ddexC as _ImportedBinding__ddexC
+from . import _iso639a2 as _ImportedBinding__iso639a2
+from . import _ddex as _ImportedBinding__ddex
 
 # NOTE: All namespace declarations are reserved within the binding
 Namespace = pyxb.namespace.NamespaceForURI('http://ddex.net/xml/ern/351', create_if_missing=True)
