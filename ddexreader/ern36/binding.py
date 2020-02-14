@@ -25,7 +25,7 @@ if pyxb.__version__ != _PyXBVersion:
 
 # Import bindings for namespaces imported into schema
 import pyxb.binding.datatypes
-import _avs as _ImportedBinding__avs
+from . import _avs as _ImportedBinding__avs
 
 # NOTE: All namespace declarations are reserved within the binding
 Namespace = pyxb.namespace.NamespaceForURI('http://ddex.net/xml/ern/36', create_if_missing=True)
