@@ -26,21 +26,21 @@ def open_ddex(path):
     with open(path, 'rb') as f:
         xml_data = f.read()
 
-    if 'MessageSchemaVersionId="2010/ern-main/312"' in xml_data:
+    if b'MessageSchemaVersionId="2010/ern-main/312"' in xml_data:
         return ern312.CreateFromDocument(xml_data)
-    elif 'MessageSchemaVersionId="ern/32"' in xml_data:
+    elif b'MessageSchemaVersionId="ern/32"' in xml_data:
         return ern32.CreateFromDocument(xml_data)
-    elif 'MessageSchemaVersionId="2011/ern-main/33"' in xml_data:
+    elif b'MessageSchemaVersionId="2011/ern-main/33"' in xml_data:
         return ern33.CreateFromDocument(xml_data)
-    elif 'MessageSchemaVersionId="ern/34"' in xml_data:
+    elif b'MessageSchemaVersionId="ern/34"' in xml_data:
         return ern34.CreateFromDocument(xml_data)
-    elif 'MessageSchemaVersionId="ern/341"' in xml_data:
+    elif b'MessageSchemaVersionId="ern/341"' in xml_data:
         return ern341.CreateFromDocument(xml_data)
-    elif 'MessageSchemaVersionId="ern/35"' in xml_data:
+    elif b'MessageSchemaVersionId="ern/35"' in xml_data:
         return ern35.CreateFromDocument(xml_data)
-    elif 'MessageSchemaVersionId="ern/351"' in xml_data:
+    elif b'MessageSchemaVersionId="ern/351"' in xml_data:
         return ern351.CreateFromDocument(xml_data)
-    elif 'MessageSchemaVersionId="ern/36"' in xml_data:
+    elif b'MessageSchemaVersionId="ern/36"' in xml_data:
         return ern36.CreateFromDocument(xml_data)
     else:
         raise ValueError('No ERN version compatible with this DDEX file.')
@@ -62,7 +62,7 @@ def ddex_to_dict(ddex):
 
     # Check if we have a leaf type (which means its repr will be a string containing a unicode string)
     if 'object' not in repr(ddex):
-        return unicode(ddex)
+        return str(ddex)
     d = {}
 
     for attr in attributes:
